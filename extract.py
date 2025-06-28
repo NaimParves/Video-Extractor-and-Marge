@@ -39,7 +39,7 @@ print("✅ All videos have been copied and renamed.")
 
 
 # Set the correct path including the file name
-output_path = r'C:\Users\naimp\Downloads\Coursera - Mathematics for Machine Learning and Data Science Specialization\collected_videos\file_list.txt'
+output_path = os.path.join(destination_folder,'file_list.txt')
 
 # Create file_list.txt with '1.mp4' to '7.mp4'
 with open(output_path, 'w', encoding='utf-8') as f:
